@@ -9,7 +9,7 @@ RUN apt-get update && \
     mrbayes \
     mrbayes-mpi \
     iqtree \
-    t-coffee && \
+    t-coffee \
     python3-pip && \
     apt-get clean && \
     useradd -m student
@@ -19,6 +19,8 @@ WORKDIR /home/student
 COPY --chown=student . /home/student/
 
 VOLUME /home/student
+
+ENV PATH="/home/student/.local/bin:${PATH}"
 
 USER student
 
