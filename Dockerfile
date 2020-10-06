@@ -10,6 +10,7 @@ RUN apt-get update && \
     mrbayes-mpi \
     iqtree \
     t-coffee && \
+    python3-pip && \
     apt-get clean && \
     useradd -m student
 
