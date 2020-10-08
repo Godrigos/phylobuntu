@@ -5,7 +5,7 @@ Ubuntu 20.04 bash for phylogenetics classes.
 This is the docker image configuration for [godrigos/phylobuntu](https://hub.docker.com/repository/docker/godrigos/phylobuntu) on Docker Hub.
 
 It contais:
-* MrBayes (regular and MPI, 3.2.6+dfsg-2ubuntu2) - Bayesian Inference of Phylogeny
+* MrBayes (3.2.6+dfsg-2ubuntu2) - Bayesian Inference of Phylogeny
 * IQTree (1.6.12+dfsg-1build1) - Efficient phylogenetic inference by maximum likelihood
 * raxml (8.2.12+dfsg-4) - Randomized Axelerated Maximum Likelihood of phylogenetic trees (call it as raxmlHPC)
 * phyml (3:3.3.20190909-1) - Phylogenetic estimation using Maximum Likelihood
