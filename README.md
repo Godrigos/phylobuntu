@@ -6,7 +6,9 @@ This is the docker image configuration for [godrigos/phylobuntu](https://hub.doc
 
 It contais:
 * MrBayes (regular and MPI, 3.2.6+dfsg-2ubuntu2) - Bayesian Inference of Phylogeny
-* IQTree (1.6.12+dfsg-1build1) - Efficient phylogenetic software inference by maximum likelihood
+* IQTree (1.6.12+dfsg-1build1) - Efficient phylogenetic inference by maximum likelihood
+* raxml (8.2.12+dfsg-4) - Randomized Axelerated Maximum Likelihood of phylogenetic trees (call it as raxmlHPC)
+* phyml (3:3.3.20190909-1) - Phylogenetic estimation using Maximum Likelihood
 * t-coffee (12.00.7fb08c2-4build1) - Multiple Sequence Alignment
 * amap-align (2.2+git20080214.600fc29+dfsg-1build1) - Protein multiple alignment by sequence annealing
 * clustalo (1.2.4-4build1) - General purpose multiple sequence alignment program for proteins

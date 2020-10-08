@@ -9,6 +9,8 @@ RUN apt-get update && \
     mrbayes \
     mrbayes-mpi \
     iqtree \
+    phyml \
+    raxml \
     t-coffee \
     python3-pip && \
     apt-get clean && \
