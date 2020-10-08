@@ -8,6 +8,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y \
     mrbayes \
+    mrbayes-mpi \
     iqtree \
     phyml \
     raxml \
