@@ -25,11 +25,12 @@ It contais:
 * probcons (1.12-12build1) - PROBabilistic CONSistency-based multiple sequence alignment
 * proda (1.0-12build1) - Multiple alignment of protein sequences
 * tm-align (20190822+dfsg-2build1) - Structural alignment of proteins
-* Phyton 3 - An interpreted, high-level and general-purpose programming language. It is dynamically typed and garbage-collected.
-* PIP - The package installer for Python. You can use pip to install packages from the Python Package Index and other indexes.
+* Phyton (3.8.2) - An interpreted, high-level and general-purpose programming language. It is dynamically typed and garbage-collected.
+* pip (20.0.2-5ubuntu1.1) - The package installer for Python. You can use pip to install packages from the Python Package Index and other indexes.
+* R (4.0.2-1) - R is ‘GNU S’, a freely available language and environment for statistical computing and graphics.
 
 **phylobuntu** is most intended to be used in phylogenetics classes. A new user without root access is created and is the default user of the image.
 
-The image has a volume mounted as the user home directory where students can create, edit and save files, install Python3 packages and save analyses results.
+The image has a volume mounted as the user home directory where students can create, edit and save files, install Python3 and R packages.
 
-You should run a container of it as: `docker container run -it godrigos/phylobuntu`.
+You should run a container of it as: `docker run -it godrigos/phylobuntu`.
