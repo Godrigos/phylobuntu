@@ -29,8 +29,8 @@ It contais:
 * pip (20.0.2-5ubuntu1.1) - The package installer for Python. You can use pip to install packages from the Python Package Index and other indexes.
 * R (4.0.2-1) - R is ‘GNU S’, a freely available language and environment for statistical computing and graphics.
 
+This image also contain auxiliary libraries to the main applications installed as well to R and Python 3 packages that may be used.
+
 **phylobuntu** is most intended to be used in phylogenetics classes. A new user without root access is created and is the default user of the image.
 
-The image has a volume mounted as the user home directory where students can create, edit and save files, install Python3 and R packages.
-
-You should run a container of it as: `docker run -it godrigos/phylobuntu`.
+You should run a container of it as: `docker run -it --mount type=bind,source=my/host/dir,target=/home/student godrigos/phylobuntu`. This will start a **phylobuntu** container with you host directory content available for use. Just change `my/host/dir` to the path of the directory you want to make available to the container. Remember, inside the binded host directory the container user will have complete control, so it will be capable to create, edit and delete content. Do not store unique copies or sensitive data in such directory.

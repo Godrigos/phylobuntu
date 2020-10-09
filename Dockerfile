@@ -29,10 +29,6 @@ RUN echo "deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/" > /etc
 
 WORKDIR /home/student
 
-COPY --chown=student . /home/student/
-
-VOLUME /home/student
-
 ENV PATH="/home/student/.local/bin:${PATH}"
 
 USER student
