@@ -27,7 +27,7 @@ It contais:
 * tm-align (20190822+dfsg-2build1) - Structural alignment of proteins
 * Phyton (3.8.2) - An interpreted, high-level and general-purpose programming language. It is dynamically typed and garbage-collected.
 * pip (20.0.2-5ubuntu1.1) - The package installer for Python. You can use pip to install packages from the Python Package Index and other indexes.
-* R (4.0.3) - R is ‘GNU S’, a freely available language and environment for statistical computing and graphics.
+* R (latest version on deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/) - R is ‘GNU S’, a freely available language and environment for statistical computing and graphics.
 
 This image also contain auxiliary libraries to the main applications installed as well to R and Python 3 packages that may be used.
 
