@@ -29,7 +29,7 @@ It contais:
 * pip (20.0) - The package installer for Python. You can use pip to install packages from the Python Package Index and other indexes.
 * R (4.1.0) - R is ‘GNU S’, a freely available language and environment for statistical computing and graphics.
 
-This image also contain auxiliary libraries to the main applications installed as well to R and Python 3 packages that may be used.
+This image also contain auxiliary libraries to the main applications installed as well as R and Python 3 packages.
 
 **phylobuntu** is most intended to be used in phylogenetics classes. A new user without root access is created and is the default user of the image.
 
