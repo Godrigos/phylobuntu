@@ -2,6 +2,7 @@ FROM ubuntu:20.04
 
 ENV TZ=America/Sao_Paulo
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1
+ENV R_LIBS_USER=~/.local/lib/R
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -32,6 +33,12 @@ WORKDIR /home/student
 ENV PATH="/home/student/.local/bin:${PATH}"
 
 USER student
+
+RUN Rscript -e 'dir.create(path = Sys.getenv("R_LIBS_USER"), showWarnings = FALSE, recursive = TRUE)' \
+            -e 'if (!requireNamespace("BiocManager", quietly = TRUE))' \
+                -e 'install.packages("BiocManager", lib = Sys.getenv("R_LIBS_USER"))'
+
+RUN Rscript -e 'BiocManager::install(lib = Sys.getenv("R_LIBS_USER"))'
 
 LABEL description="Ubuntu 20.04 bash for phylogenetics classes"
 LABEL maintainer="Rodrigo Aluizio"
