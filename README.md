@@ -1,6 +1,6 @@
 # phylobuntu
 
-Ubuntu 20.04.3 LTS bash for phylogenetics classes.
+Ubuntu 20.04.4 LTS bash for phylogenetics classes.
 
 This is the docker image configuration for [godrigos/phylobuntu](https://hub.docker.com/repository/docker/godrigos/phylobuntu) on Docker Hub.
 
@@ -27,7 +27,7 @@ It contains:
 * tm-align (20190822+dfsg-2build1) - Structural alignment of proteins
 * Phyton (3.8.10) - An interpreted, high-level and general-purpose programming language. It is dynamically typed and garbage-collected.
 * pip (20.0.2) - The package installer for Python. You can use pip to install packages from the Python Package Index and other indexes.
-* R (4.1.1) - R is ‘GNU S’, a freely available language and environment for statistical computing and graphics.
+* R (4.1.3) - R is ‘GNU S’, a freely available language and environment for statistical computing and graphics.
 
 This image also contain auxiliary libraries to the main applications installed as well as R and Python 3 packages.
 
