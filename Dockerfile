@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 ENV TZ=America/Sao_Paulo
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1
