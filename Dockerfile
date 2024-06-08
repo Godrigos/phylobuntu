@@ -32,5 +32,5 @@ ENV PATH="/home/student/.local/bin:${PATH}"
 
 USER student
 
-LABEL description="Ubuntu 22.04 bash for phylogenetics classes"
+LABEL description="Ubuntu 24.04 bash for phylogenetics classes"
 LABEL maintainer="Rodrigo Aluizio"
