@@ -17,14 +17,15 @@ RUN apt-get update && \
     libssl-dev \
     gnupg2 \
     python3-pip && \
-    apt-get clean && \
     useradd -m student
 
 RUN echo "deb https://cloud.r-project.org/bin/linux/ubuntu noble-cran40/" > /etc/apt/sources.list.d/cran.list && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 && \
     apt-get update && \
-    apt-get install -y \
-    r-base-dev
+    apt-get install -y --no-install-recommends \
+    r-base-dev && \
+    apt-get autoremove --purge && \
+    apt-get clean
 
 WORKDIR /home/student
 
