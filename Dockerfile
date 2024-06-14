@@ -16,16 +16,16 @@ RUN apt-get update && \
     libxml2-dev \
     libssl-dev \
     gnupg2 \
-    python3-pip
+    python3-pip \
+    python3-venv
 
 RUN echo "deb https://cloud.r-project.org/bin/linux/ubuntu noble-cran40/" > /etc/apt/sources.list.d/cran.list && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9 && \
     apt-get update && \
     apt-get install --no-install-recommends -y \
-    r-base && \
+    r-base-dev && \
     apt-get autoremove --purge && \
-    apt-get clean && \
-    chown -R ubuntu: /home/ubuntu
+    apt-get clean
 
 USER ubuntu
 WORKDIR /home/ubuntu
